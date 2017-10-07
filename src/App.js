@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import * as Actions from './actions';
 import { connect } from 'react-redux';
 
@@ -12,6 +13,7 @@ function BlogSource_Url(){
 function BlogContents(){
 
 }
+
 
 class App extends Component {
   constructor(props) {
