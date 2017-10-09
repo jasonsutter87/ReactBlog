@@ -5,11 +5,11 @@ import {
 
 const initialState = {
   count: 0,
-  posts: [{title:'first post!',source_url:'http://www.google.com', contents:'ZOMG first post'}],
+  posts: [{id: '9b249b73', title:'first post!',source_url:'http://www.google.com', contents:'ZOMG first post'}],
 };
 
 function BlogReducer(state = initialState, action) {
-  const { title, source_url, contents, count } = action;
+  const { id, title, contents, count } = action;
   switch (action.type) {
     case INCREASE_COUNT:
         return Object.assign({}, state, { count });
@@ -17,8 +17,8 @@ function BlogReducer(state = initialState, action) {
       return {
        ...state,
        posts: [{
+         id,
          title,
-         source_url,
          contents,
        }, ...state.posts],
      };
