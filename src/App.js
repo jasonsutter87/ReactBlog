@@ -33,7 +33,7 @@ class App extends Component {
                 </h3>
               </a>
               <p className="post-meta">Posted on:{'\t'}
-                {new Date().toDateString()}</p>
+                {post.date}</p>
             </div>
           </div>
         </div>
@@ -45,21 +45,19 @@ class App extends Component {
     );
     return (
       <div>
-      <header className="masthead bg-home" style={{"background-image": './styles/home-bg.jpg'}}>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-8 col-md-10 mx-auto">
-              <div className="site-heading">
-                <h1>My Thoughts</h1>
-                <span className="subheading">A blog for all of the things</span><br />
-                <button type="button" className="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">New Thought?</button>
+        <header className="masthead bg-home" style={{"background-image": './styles/home-bg.jpg'}}>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-8 col-md-10 mx-auto">
+                <div className="site-heading">
+                  <h1>My Thoughts</h1>
+                  <span className="subheading">A blog for all of the things</span><br />
+                  <button type="button" className="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">New Thought?</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </header>
-
-
+        </header>
         <div id="myModal" className="modal fade" role="dialog">
           <div className="modal-dialog">
 
@@ -83,49 +81,28 @@ class App extends Component {
             <ul>{postItems}</ul>
           </center>
         </div>
-
         <div>
-        <footer>
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-8 col-md-10 mx-auto">
-                <ul className="list-inline text-center">
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <span className="fa-stack fa-lg">
-                        <i className="fa fa-circle fa-stack-2x"></i>
-                        <i className="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                      </span>
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <span className="fa-stack fa-lg">
-                        <i className="fa fa-circle fa-stack-2x"></i>
-                        <i className="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                      </span>
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <span className="fa-stack fa-lg">
-                        <i className="fa fa-circle fa-stack-2x"></i>
-                        <i className="fa fa-github fa-stack-1x fa-inverse"></i>
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-                <p className="copyright text-muted">Copyright &copy; Your Website 2017</p>
+          <footer>
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-8 col-md-10 mx-auto">
+                  <ul className="list-inline text-center">
+
+                    <li className="list-inline-item">
+                      <a href="https://github.com/jasonsutter87">
+                        <span className="fa-stack fa-lg">
+                          <i className="fa fa-circle fa-stack-2x"></i>
+                          <i className="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                  <p className="copyright text-muted">Copyright &copy; Jason Sutter 2017</p>
+                </div>
               </div>
             </div>
-          </div>
-        </footer>
-
+          </footer>
         </div>
-
-
-
-
     </div>
     );
   }

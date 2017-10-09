@@ -28,7 +28,7 @@ class NewPost extends Component {
   handleSubmit(event) {
     event.preventDefault();
     this.props.addToCount(this.props.count)
-    this.props.addToPosts(uuidV4().split('-')[0], this.state.title, this.state.contents);
+    this.props.addToPosts(uuidV4().split('-')[0], new Date().toDateString() ,this.state.title, this.state.contents);
     $('#modalNewPostClose').click()
   }
 
