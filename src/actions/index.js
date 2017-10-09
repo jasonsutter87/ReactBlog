@@ -11,10 +11,11 @@ export function addToCount(count) {
   };
 }
 
-export function addToPosts(id, title, contents) {
+export function addToPosts(id, date, title, contents) {
   return {
      type: ADD_TO_POSTS,
      id,
+     date,
      title,
      contents,
    };
