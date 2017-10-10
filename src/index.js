@@ -14,6 +14,7 @@ const store = createStore(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
+
 const Post = function(props){
   let _id = props.match.params.postId
   let obj = store.getState().posts.find(ele => ele.id === _id)
@@ -71,6 +72,8 @@ const Post = function(props){
   )
 }
 
+
+
 store.subscribe(() => {
   saveState(store.getState())
 })
@@ -80,7 +83,7 @@ ReactDOM.render(
     <BrowserRouter>
       <div>
         <Route exact path='/' component={App} />
-        <Route path='/posts/:postId' component={Post} />
+        <Route path='/posts/:postId'  component={Post} />
       </div>
     </BrowserRouter>
   </Provider>,

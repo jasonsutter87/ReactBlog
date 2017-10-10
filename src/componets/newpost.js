@@ -45,7 +45,7 @@ class NewPost extends Component {
           <label>Content:</label><br />
           <textarea className="form-control" type="text_area" rows="5" name="contents" onChange={this.handleChange}/>
         </div>
-        <input type="submit" value="Submit" />
+        <input type="submit" className="btn btn-primary" value="Submit" />
         </form>
       </div>
     );
