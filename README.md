@@ -1,6 +1,6 @@
 # React Blog
 
-![](https://i.imgur.com/1BmCUGX.gifv)
+![](https://i.imgur.com/1BmCUGX.gif)
 
     Clone this repo and pull down
     cd ReactBlogFrontEnd
