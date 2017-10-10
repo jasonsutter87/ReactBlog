@@ -1,5 +1,4 @@
 import {
-  INCREASE_COUNT,
   ADD_TO_POSTS,
 } from '../constants';
 

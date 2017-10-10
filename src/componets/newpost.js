@@ -27,7 +27,6 @@ class NewPost extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    this.props.addToCount(this.props.count)
     this.props.addToPosts(uuidV4().split('-')[0], new Date().toDateString() ,this.state.title, this.state.contents);
     $('#modalNewPostClose').click()
   }
@@ -55,7 +54,7 @@ class NewPost extends Component {
 
 function mapStateToProps (state){
   return {
-    count: state.count
+    
   }
 }
 
